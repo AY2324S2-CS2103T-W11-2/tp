@@ -7,11 +7,11 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "ken-jin": "Ken Jin",
+        "lifu": "Lifu",
+        "jules": "Jules",
+        "jia-jie": "Jia Jie",
+        "jae-geun": "Jae Geun"
       },
       "headingKeywords": {}
     },
@@ -140,10 +140,50 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/alphajae11.md",
+      "title": "Jae Geun's Project Portfolio Page",
+      "headings": {
+        "project-cca-manager": "Project: CCA Manager"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/chuahjiajie.md",
+      "title": "Jia Jie's Project Portfolio Page",
+      "headings": {
+        "project-cca-manager": "Project: CCA Manager"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/fidget-spinner.md",
+      "title": "Ken Jin's Project Portfolio Page",
+      "headings": {
+        "project-cca-manager": "Project: CCA Manager"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/juliapoo.md",
+      "title": "Jule's Project Portfolio Page",
+      "headings": {
+        "project-cca-manager": "Project: CCA Manager"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/lifhoshi.md",
+      "title": "Lifu's Project Portfolio Page",
+      "headings": {
+        "project-cca-manager": "Project: CCA Manager"
       },
       "headingKeywords": {}
     },
