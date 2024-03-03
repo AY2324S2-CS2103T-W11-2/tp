@@ -18,7 +18,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](https://github.com/Fidget-Spinner/)]
 [[portfolio](team/fidget-spinner.md)]
 
-* Role: Team Lead
+* Role: Developer
 * Responsibilities: Logic
 
 ### Lifu
