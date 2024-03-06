@@ -54,6 +54,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
   * Logic
   * Deliverables and Deadlines
   * Testing
+  * Testing 2
 
 ### Jae Geun
 
