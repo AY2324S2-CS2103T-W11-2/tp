@@ -1,6 +1,6 @@
 ---
   layout: default.md
-  title: "About Us"
+  "About Us"
 ---
 
 # About Us
@@ -23,7 +23,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Lifu
 
-<img src="images/lifhoshi.jpg" width="200px">
+<img src="images/lifhoshi.png" width="200px">
 
 [[github](https://github.com/LifHoshi)]
 [[portfolio](team/lifhoshi.md)]
@@ -44,13 +44,17 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Jia Jie
 
-<img src="images/chuahjiajie.jpg" width="200px">
+<img src="images/chuahjiajie.png" width="200px">
 
 [[github](http://github.com/chuahjiajie)]
 [[portfolio](team/chuahjiajie.md)]
 
 * Role: Developer
-* Responsibilities: Logic
+* Responsibilities: 
+  * Logic
+  * Deliverables and Deadlines
+  * Testing
+  * Testing 2
 
 ### Jae Geun
 
