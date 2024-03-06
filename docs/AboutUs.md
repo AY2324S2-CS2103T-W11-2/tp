@@ -53,6 +53,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 * Responsibilities: 
   * Logic
   * Deliverables and Deadlines
+  * Testing
 
 ### Jae Geun
 
