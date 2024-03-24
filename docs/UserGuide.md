@@ -17,7 +17,7 @@ Welcome to CCA Manager's User Guide! CCA Manager is a **contact manager designed
 
 In this user guide, we'll walk you through the essential steps to harness the full potential of CCA Manager. Whether you're a CCA Executive Committee Member or simply a CCA participant, our guide will provide you with the knowledge and tools you need to make the most of our app.
  
-This user guide does not assume any prior experience with administrative tools or command interfaces and is accessible and self-contained. If you have further questions while reading this document or while using our app, visit our [FAQ](#faq). If your question isn't answered there, feel free to visit our [project repository](https://github.com/AY2324S2-CS2103T-W11-2/tp/issues) and raise an issue.
+This user guide does not assume any prior experience with administrative tools or command interfaces and is accessible for beginners and self-contained. However, if you've used command interfaces such as those from Telegram, you might find this guide easier to follow. If you have further questions while reading this document or while using our app, visit our [FAQ](#faq). If your question isn't answered there, feel free to visit our [project repository](https://github.com/AY2324S2-CS2103T-W11-2/tp/issues) and raise an issue.
 
 This user guide is split into 4 parts: An introduction to what CCA Manager offers, a section to set up our app, a beginner-friendly tutorial that introduces CCA Manager through a practical use case, and a comprehensive reference that explains all of CCA Manager's concepts and features. Feel free to navigate this guide via the sidebar on the right.
 
