@@ -4,52 +4,54 @@
   pageNav: 3
 ---
 
-# CCA Manager User Guide
+# CCA Manager User Guide ℹ️
 
-CCA Manager is a **desktop app for managing contacts, optimized for use via a  Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB3 can get your contact management tasks done faster than traditional GUI apps.
+CCA Manager is a **desktop app for managing contacts, optimized for use via a  Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, CCA Manager can get your contact management tasks done faster than traditional GUI apps.
 
-<!-- * Table of Contents -->
-<page-nav-print />
+* <details><summary>1. Table of contents</summary> <ul>
+  <li><details><summary>1.1 Set up and get started</summary> <ul>
+    <li><details><summary>1.1.1 Request Environment</summary></details></li>
+    <li><details><summary>1.1.2 How to install</summary></details></li>
+    <li><details><summary>1.1.3 Compatibility with different operating systems</summary></details></li>
+  </ul></details></li> <!--End 1.1-->
+  
+  <li><details><summary>1.2 Basic Tutorial</summary> <ul>
+    <li><details><summary>1.2.1 Attributes Exaplination</summary></details></li>
+    <li><details><summary>1.2.2 how to use command-line interface(CLI)</summary></details></li>
+  </ul></details></li> <!--End 1.2-->
+  
+  <li><details><summary>1.3 All the features</summary> <ul>
+  </ul></details></li> <!--End 1.3-->
 
---------------------------------------------------------------------------------------------------------------------
+  <li><details><summary>1.4 Common errors</summary> <ul>
+  </ul></details></li> <!--End 1.4-->
 
-## Quick start
+  </ul></details> <!--End 1-->
+ * <details><summary>2. What's new? </summary> <ul>
+   [Content to be added]
+  </ul></details></li> <!--End 2-->
 
-1. Ensure you have Java `11` or above installed in your Computer.
+   * <details><summary>3. Upcoming Features? </summary> <ul>
+     [Content to be added]
+  </ul></details></li> <!--End 3-->
 
-1. Download the latest `ccamanager.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
+* <details><summary>4. Glossary </summary> <ul>
+  
+## Command summary
 
-1. Copy the file to the folder you want to use as the _home folder_ for your CCA Manager.
+Action     | Format, Examples
+-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG] c/CCA GROUP…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague c/CCA Cycling`
+**Clear**  | `clear`
+**Delete** | `delete INDEX`<br> e.g., `delete 3`
+**Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
+**Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
+**List**   | `list`
+**Filter** | `filter CCA1, CCA2, ...` e.g. `filter NUS Cycling`
+**Assign** | `Assign INDEX /r ROLE` e.g. `Assign 2 /r Member`
+**Help**   | `help`
 
-1. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar ccamanager.jar` command to run the application.<br>
-
-   ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-   **A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.**<br>
-   
-   ![Ui](images/Ui.png)
-
-1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
-   Some example commands you can try:
-
-   * `list` : Lists all contacts.
-
-   * [`add` : Adds a contact/CCA group to the CCA Manager](#feature-add)
-
-   * `delete 3` : Deletes the 3rd contact shown in the current list.
-
-   * `clear` : Deletes all contacts.
-
-   * `exit` : Exits the app.
-
-   * [`clear` : Deletes all contacts](#feature-clear)
- 
-   * [`filter` : Filter by tags](#feature-filter)
- 
-   * [`assign` : Assign roles to contact](#feature-assign)
-
-   * [`exit` : Exits the app](#feature-exit)
-     
-   * $${\color{green}More \space features \space will \space be \space coming \space in \space future \space update}$$
+</ul></details></li> <!--End 4-->
 
 ### Further Help
  Refer to the [Features](#features) below for details of each command.⬇️⬇️⬇️⬇️
