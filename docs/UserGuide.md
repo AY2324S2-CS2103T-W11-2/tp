@@ -228,7 +228,7 @@ Output:
 
   ![edit-output](images/UG-Basics/edit-output.png)
 
-### Delete
+### Delete a Contact
 Has a member quit the CCA completely. Don’t need to waste space in your address book and clutter it up. You can simply delete them from the address book with this simple command. 
 
 Let’s say Mary Jane at index 2 has quit NUS Origami. To remove her simply use the following command:
