@@ -422,5 +422,5 @@ Action     | Format, Examples
 **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
 **List**   | `list`
 **Filter** | `filter CCA1, CCA2, ...` e.g. `filter NUS Cycling`
-**Assign** | `assign INDEX r/ROLE` e.g. `assign 2 r/Member`
+**Assign** | `assign INDEX r/ROLE` e.g. `assign 2 r/ Member` or `assign 2 r/Member`
 **Help**   | `help`
