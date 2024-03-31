@@ -308,7 +308,7 @@ with(this){return _c('pre',[_c('code',{pre:true,attrs:{"class":"hljs"}},[_c('spa
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('pre',[_c('code',{pre:true,attrs:{"class":"hljs"}},[_c('span',[_v("2a. Provided Non-Integer input for `Index of Contacts`.\n")]),_c('span',[_v("    2a1. `CCA Manager` shows an error message. \n")]),_c('span',[_v("    Use case resumes at step 2\n")]),_c('span',[_v("\n")]),_c('span',[_v("3a. Provided Integer that is out of range of index\n")]),_c('span',[_v("    3a1. `CCA Manager` shows an error message.\n")]),_c('span',[_v("    Use case resumes at step 2\n")]),_c('span',[_v("\n")]),_c('span',[_v("4a. Invalid `Role Name`\n")]),_c('span',[_v("    Use case ends.\n")]),_c('span',[_v("\n")]),_c('span',[_v("5a. Neglected to input `r` or `c` character prior to name\n")]),_c('span',[_v("    5a1. `CCA Manager` shows an error message.\n")]),_c('span',[_v("    Use case resumes at step 2\n")])])])}
+with(this){return _c('pre',[_c('code',{pre:true,attrs:{"class":"hljs"}},[_c('span',[_v("2a. Provided Non-Integer input for `Index of Contacts`.\n")]),_c('span',[_v("    2a1. `CCA Manager` shows an error message.\n")]),_c('span',[_v("    Use case resumes at step 2\n")]),_c('span',[_v("\n")]),_c('span',[_v("3a. Provided Integer that is out of range of index\n")]),_c('span',[_v("    3a1. `CCA Manager` shows an error message.\n")]),_c('span',[_v("    Use case resumes at step 2\n")]),_c('span',[_v("\n")]),_c('span',[_v("4a. Invalid `Role Name`\n")]),_c('span',[_v("    Use case ends.\n")]),_c('span',[_v("\n")]),_c('span',[_v("5a. Neglected to input `r` or `c` character prior to name\n")]),_c('span',[_v("    5a1. `CCA Manager` shows an error message.\n")]),_c('span',[_v("    Use case resumes at step 2\n")])])])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"uc02-form-groups-of-contacts"}},[_v("UC02 - Form groups of contacts"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#uc02-form-groups-of-contacts","onclick":"event.stopPropagation()"}})])}
@@ -374,6 +374,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Fri, 29 Mar 2024, 14:55:01 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Sun, 31 Mar 2024, 12:34:50 GMT+8]")])])])}
 }];
   
