@@ -52,7 +52,7 @@ public class Person {
      * @return new person
      */
     public Person replaceCca(Set<Cca> newCcas) {
-        return new Person(name, phone, email, address, roles, newCcas);
+        return new Person(name, phone, email, address, roles, newCcas, amount);
     }
 
     public Name getName() {
