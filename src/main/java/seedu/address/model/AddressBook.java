@@ -125,9 +125,7 @@ public class AddressBook implements ReadOnlyAddressBook {
     public void removePerson(Person key) {
         persons.remove(key);
     }
-
     //// util methods
-
     @Override
     public String toString() {
         return new ToStringBuilder(this)

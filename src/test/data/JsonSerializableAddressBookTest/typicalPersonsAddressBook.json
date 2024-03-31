@@ -7,13 +7,19 @@
     "email" : "alice@example.com",
     "address" : "123, Jurong West Ave 6, #08-111",
     "roles" : [ "friends" ],
-    "CCAs" : [ "NUS Cycling" ]
+    "CCAs" : [ "NUS Cycling" ],
+    "amount" : {
+      "value" : "10.00"
+    }
   }, {
     "name" : "Benson Meier",
     "phone" : "98765432",
     "email" : "johnd@example.com",
     "address" : "311, Clementi Ave 2, #02-25",
     "roles" : [ "owesMoney", "friends" ],
+    "amount" : {
+      "value" : "20.00"
+    },
     "CCAs" : [ "NUS Cycling", "NUS Bakes" ]
   }, {
     "name" : "Carl Kurz",
@@ -21,6 +27,9 @@
     "email" : "heinz@example.com",
     "address" : "wall street",
     "roles" : [ ],
+    "amount" : {
+      "value" : "30.00"
+    },
     "CCAs" : [ "NUS Cycling" ]
   }, {
     "name" : "Daniel Meier",
@@ -28,6 +37,9 @@
     "email" : "cornelia@example.com",
     "address" : "10th street",
     "roles" : [ "friends" ],
+    "amount" : {
+      "value" : "40.00"
+    },
     "CCAs" : [ "NUS Cycling" ]
   }, {
     "name" : "Elle Meyer",
@@ -35,6 +47,9 @@
     "email" : "werner@example.com",
     "address" : "michegan ave",
     "roles" : [ ],
+    "amount" : {
+      "value" : "0.0"
+    },
     "CCAs" : [ ]
   }, {
     "name" : "Fiona Kunz",
@@ -42,6 +57,9 @@
     "email" : "lydia@example.com",
     "address" : "little tokyo",
     "roles" : [ ],
+    "amount" : {
+      "value" : "50.00"
+    },
     "CCAs" : [ ]
   }, {
     "name" : "George Best",
@@ -49,6 +67,9 @@
     "email" : "anna@example.com",
     "address" : "4th street",
     "roles" : [ ],
+    "amount" : {
+      "value" : "0.0"
+    },
     "CCAs" : [ ]
   } ]
 }
