@@ -1,3 +1,7 @@
+/**
+ * This file is copied and modified from UniquePersonList.java
+ */
+
 package seedu.address.model.person;
 
 import static java.util.Objects.requireNonNull;
