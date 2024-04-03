@@ -23,8 +23,7 @@
       </HBox>
       <Label id="ccaRoleListLabel" styleClass="cell_small_label" text="Roles:" />
       <VBox fx:id="ccaRoleList" alignment="CENTER_LEFT" GridPane.columnIndex="0">
-        
       </VBox>
-    </VBox>  
+    </VBox>
   </GridPane>
 </HBox>
