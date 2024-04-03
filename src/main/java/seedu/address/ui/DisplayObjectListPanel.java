@@ -130,9 +130,13 @@ public class DisplayObjectListPanel extends UiPart<Region> {
                 setGraphic(null);
                 setText(null);
             } else {
-                Region card = object.isPerson()
-                    ? new PersonCard(object.getPerson(), getIndex() + 1).getRoot()
-                    : new CcaCard(object.getCca(), allPersons).getRoot();
+                Region card;
+                if (object.isPerson()) {
+                    card = new PersonCard(object.getPerson(), getIndex() + 1).getRoot();
+                } else {
+                    card = new CcaCard(object.getCca(), allPersons).getRoot();
+                    card.getStyleClass().add((getIndex() % 2 == 0) ? "ccaEven" : "ccaOdd");
+                }
                 setGraphic(card);
             }
         }

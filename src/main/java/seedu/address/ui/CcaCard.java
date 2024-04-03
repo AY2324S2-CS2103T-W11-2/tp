@@ -7,6 +7,7 @@ import java.util.stream.IntStream;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
@@ -59,10 +60,27 @@ public class CcaCard extends UiPart<Region> {
             .sorted((a, b) -> a.roleName.compareTo(b.roleName))
             .collect(Collectors.toList());
 
-        allRoles.forEach(r -> generateRoleUi(r, ccaPersonel));
+        allRoles.forEach(r -> ccaRoleList
+            .getChildren()
+            .add(generateRoleUi(r, ccaPersonel))
+        );
     }
 
-    private void generateRoleUi(Role r, ObservableList<Person> ccaPersonel) {
+    private HBox generateRoleListElementUi(int idx, Person p) {
+        Label pl = new Label();
+        pl.getStyleClass().add("ccaRolePersonIndex");
+        pl.setText(Integer.valueOf(idx + 1).toString() + ". ");
+        Label nl = new Label();
+        nl.getStyleClass().add("ccaRolePersonName");
+        nl.setText(p.getName().fullName);
+
+        HBox hb = new HBox();
+        hb.getChildren().add(pl);
+        hb.getChildren().add(nl);
+        return hb;
+    }
+
+    private VBox generateRoleUi(Role r, ObservableList<Person> ccaPersonel) {
 
         VBox rb = new VBox();
         rb.getStyleClass().add("ccaRoleListBox");
@@ -90,21 +108,9 @@ public class CcaCard extends UiPart<Region> {
             .range(0, rolePersonel.size())
             .forEach(idx -> {
                 Person p = rolePersonel.get(idx);
-                Label pl = new Label();
-                Label nl = new Label();
-                pl.getStyleClass().add("ccaRolePersonIndex");
-                pl.setText(Integer.valueOf(idx + 1).toString() + ". ");
-                nl.getStyleClass().add("ccaRolePersonName");
-                nl.setText(p.getName().fullName);
-
-                HBox hb = new HBox();
-                hb.getChildren().add(pl);
-                hb.getChildren().add(nl);
-
-                b.getChildren().add(hb);
+                b.getChildren().add(generateRoleListElementUi(idx, p));
             });
         rb.getChildren().add(b);
-
-        ccaRoleList.getChildren().add(rb);
+        return rb;
     }
 }

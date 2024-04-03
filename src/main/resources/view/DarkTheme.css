@@ -371,7 +371,7 @@
 
 .ccaRoleListLabel {
     -fx-font-family: "Segoe UI Semibold";
-    -fx-font-size: 14;
+    -fx-font-size: 16;
 }
 
 .ccaRoleList {
@@ -380,13 +380,13 @@
 
 .ccaRoleName {
     -fx-font-family: "Segoe UI Semibold";
-    -fx-font-size: 12;
+    -fx-font-size: 14;
 }
 
 .ccaRolePersonName {
     -fx-font-family: "Segoe UI";
     -fx-font-size: 11;
-    -fx-background-color: #3e7b91;
+    -fx-background-color: #1d3741;
     -fx-padding: 1 3 1 3;
     -fx-border-radius: 2;
     -fx-background-radius: 2;
@@ -394,7 +394,7 @@
 
 .ccaRolePersonIndex {
     -fx-font-family: "Segoe UI";
-    -fx-font-size: 11;
+    -fx-font-size: 13;
 }
 
 .ccaRolePersonList {
@@ -403,4 +403,12 @@
 
 .ccaRoleListBox {
     -fx-padding: 0 0 10 10;
+}
+
+.ccaEven {
+    -fx-background-color: rgb(15, 13, 27);
+}
+
+.ccaOdd {
+    -fx-background-color: rgb(33, 28, 62);
 }
