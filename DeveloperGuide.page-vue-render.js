@@ -239,19 +239,19 @@ with(this){return _c('ol',[_c('li',[_v("Displaying every contact related to CCAs
 with(this){return _c('h3',{attrs:{"id":"proposed-attendance-tracking"}},[_v("[Proposed] Attendance Tracking"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#proposed-attendance-tracking","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("An example command for setting attendance is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setatt n\\John Doe a\\9 s\\10")]),_v(". Which means\n\"Set the attendance of John Doe to be 9 out of 10 sessions\".  The process is as follows.")])}
+with(this){return _c('p',[_v("An example command for setting attendance is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setatt index att\\9 s\\10")]),_v(". Which means\n\"Set the attendance of person at index to be 9 out of 10 sessions\".  The process is as follows.")])}
 },function anonymous(
 ) {
 with(this){return _c('ol',[_c('li',[_v("Retrieve the attendance information of John Doe.")]),_v(" "),_c('li',[_v("Edit the attendance details according to the input.")]),_v(" "),_c('li',[_v("Update the attendance details of the person in the model.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("An example command for setting the number of sessions is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setsess n\\John Doe s\\10")]),_v(". Which means\n\"Set the number of sessions of John Doe to be 10\".  The process is as follows.")])}
+with(this){return _c('p',[_v("An example command for setting the number of sessions is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("setsess index s\\10")]),_v(". Which means\n\"Set the number of sessions of person at index to be 10\".  The process is as follows.")])}
 },function anonymous(
 ) {
 with(this){return _c('ol',[_c('li',[_v("Retrieve the attendance information of John Doe.")]),_v(" "),_c('li',[_v("Increment the attendance value by 1.")]),_v(" "),_c('li',[_v("Update the attendance details of the person in the model.")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("An example command for incrementing attendance is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("incatt n\\John Doe")]),_v(". Which means\n\"Increment the attendance of John Doe by 1\".  The process is as follows.")])}
+with(this){return _c('p',[_v("An example command for incrementing attendance is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("incatt index")]),_v(". Which means\n\"Increment the attendance of person at index by 1\".  The process is as follows.")])}
 },function anonymous(
 ) {
 with(this){return _c('ol',[_c('li',[_v("Retrieve the attendance information of John Doe.")]),_v(" "),_c('li',[_v("Edit the session detail according to the input.")]),_v(" "),_c('li',[_v("Update the attendance details of the person in the model.")])])}
@@ -383,6 +383,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Thu, 4 Apr 2024, 14:04:13 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Fri, 5 Apr 2024, 1:30:28 GMT+8]")])])])}
 }];
   
