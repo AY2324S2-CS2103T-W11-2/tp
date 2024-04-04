@@ -8,6 +8,6 @@ with(this){return _c('div',{attrs:{"id":"app"}},[_c('header',{attrs:{"sticky":""
 with(this){return _c('div',{attrs:{"id":"content-wrapper"}},[_c('h3',{attrs:{"id":"project-cca-manager"}},[_v("Project: CCA Manager"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#project-cca-manager","onclick":"event.stopPropagation()"}})]),_v(" "),_c('p',[_v("CCA Manager is a "),_c('strong',[_v("desktop app for managing contacts, optimized for use via a  Line Interface")]),_v(" (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, CCA Manager can get your contact management tasks done faster than traditional GUI apps.")]),_v(" "),_c('p',[_v("Given below are my contributions to the project.")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Thu, 4 Apr 2024, 14:00:22 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Thu, 4 Apr 2024, 14:00:38 GMT+8]")])])])}
 }];
   
