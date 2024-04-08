@@ -38,7 +38,7 @@ public class Person {
     private final Optional<Metadata> metadata;
 
     /**
-     * Every field must be present and not null exception optional fields
+     * Every field must be present and not null.
      */
     public Person(Name name, Phone phone, Email email, Address address, Set<Role> roles, Set<Cca> ccas, Amount amount,
                   Attendance attendance, Sessions sessions, Optional<Metadata> metadata) {
