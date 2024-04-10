@@ -14,7 +14,6 @@ import java.util.Set;
 
 import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.AssignCommand;
-import seedu.address.logic.commands.FilterCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.roles.Role;
 
@@ -53,7 +52,7 @@ public class AssignCommandParser implements Parser<AssignCommand> {
 
         if (!assignPersonDescriptor.isAnyFieldNotEdited()) {
             throw new ParseException(AssignCommand.MESSAGE_NOT_ASSIGNED
-                + "\n" + FilterCommand.MESSAGE_USAGE);
+                + "\n" + AssignCommand.MESSAGE_USAGE);
         }
 
         return new AssignCommand(index, assignPersonDescriptor);

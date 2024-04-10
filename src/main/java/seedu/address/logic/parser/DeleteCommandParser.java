@@ -22,7 +22,8 @@ public class DeleteCommandParser implements Parser<DeleteCommand> {
             return new DeleteCommand(index);
         } catch (ParseException pe) {
             throw new ParseException(
-                    String.format(MESSAGE_INVALID_PERSON_DISPLAYED_INDEX, DeleteCommand.MESSAGE_USAGE), pe);
+                    MESSAGE_INVALID_PERSON_DISPLAYED_INDEX
+                    + "\n" + DeleteCommand.MESSAGE_USAGE, pe);
         }
     }
 
