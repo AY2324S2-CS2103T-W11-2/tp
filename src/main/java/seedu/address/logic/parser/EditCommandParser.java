@@ -2,6 +2,7 @@ package seedu.address.logic.parser;
 
 import static java.util.Objects.requireNonNull;
 import static seedu.address.logic.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
+import static seedu.address.logic.parser.CliSyntax.NIL_FIELD;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_CCA;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
@@ -87,7 +88,7 @@ public class EditCommandParser implements Parser<EditCommand> {
         if (roles.isEmpty()) {
             return Optional.empty();
         }
-        Collection<String> roleSet = roles.size() == 1 && roles.contains("") ? Collections.emptySet() : roles;
+        Collection<String> roleSet = roles.size() == 1 && roles.contains(NIL_FIELD) ? Collections.emptySet() : roles;
         return Optional.of(ParserUtil.parseRoles(roleSet));
     }
 
@@ -102,7 +103,7 @@ public class EditCommandParser implements Parser<EditCommand> {
         if (ccas.isEmpty()) {
             return Optional.empty();
         }
-        Collection<String> ccaSet = ccas.size() == 1 && ccas.contains("") ? Collections.emptySet() : ccas;
+        Collection<String> ccaSet = ccas.size() == 1 && ccas.contains(NIL_FIELD) ? Collections.emptySet() : ccas;
         return Optional.of(ParserUtil.parseCcas(ccaSet));
     }
 }
