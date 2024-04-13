@@ -1,7 +1,7 @@
 ---
   layout: default.md
   title: "User Guide"
-  pageNav: 3
+  pageNav: 4
 ---
 
 <style>
@@ -133,28 +133,45 @@ Now you can proceed to the [Features](#features) section for a detailed listing 
 
 ## Features
 
-<box type="info" seamless>
+This section details the available functionalities of CCA Manager, organised according to the following categories:
 
-**Notes about the command format:**<br>
+1. [General Features](#general-features): General features for a better user experience
+2. [Displaying Contacts](#displaying-contacts): Displaying features in the **Results Box**
+3. [Editing Contacts](#editing-contacts): Editing contacts in CCA Manager
+4. [Deleting Contacts](#deleting-contacts): Deleting contacts in CCA Manager
+5. [Storage](#storage)
 
-* Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
-  e.g. in `add n/NAME`, `NAME` is a parameter that can be used as `add n/John Doe`.
+<!--
+# General
+Viewing help: help
+Exiting the program: exit
 
-* Items in square brackets are optional.<br>
-  e.g `n/NAME [r/ROLE]` can be used as `n/John Doe r/friend` or as `n/John Doe`.
+# Displaying contacts
+Listing all persons: list
+Locating persons by name: find
+Filter by CCA and roles: filter
 
-* Items with `…`​ after them can be used multiple times including zero times.<br>
-  e.g. `[r/ROLE]…​` can be used as ` ` (i.e. 0 times), `r/friend`, `r/friend r/family` etc.
+# Editing Contacts
+Adding a person: add
+Editing a person: edit
+Set up owe amount money: owe
+Delete a CCA: cca_delete
+Charge a person with an amount of money: charge
+Track attendance: setatt
 
-* Parameters can be in any order.<br>
-  e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
-* Extraneous parameters for commands that do not take in parameters (such as `help`, `list`, `exit` and `clear`) will be ignored.<br>
-  e.g. if the command specifies `help 123`, it will be interpreted as `help`.
+# Deleting Contacts
+Deleting a person: delete
+Clearing all entries: clear
 
-* If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
-</box>
+# Storage
+Saving the data
+Editing the data file
+Archiving data files [coming in v2.0]
+-->
 
-### Viewing help : `help`
+### General Features
+
+#### Viewing help: `help`
 
 Shows a message explaining how to access the help page.
 
@@ -164,11 +181,11 @@ $$
     ^{\text{\colorbox{lightgrey}{Action}}}
 $$
 
-#### Examples:
+##### Examples:
 
 * `help`
 
-#### Outcome:
+##### Outcome:
 
 The following is the result of executing the following command:
 
@@ -182,13 +199,75 @@ help
 
 A box appears with a button `Copy URL`. Clicking it will allow you to paste the link into your internet browsing application of choice (E.g., Chrome, Safari, Firefox) and view our User Guide.
 
+#### Exiting the program: `exit`
+
+Exits the program.
+
+Format: `exit`
+
+### Displaying Contacts
+
+#### Listing all persons: `list`
+
+Shows a list of all persons in the CCA Manager.
+
+##### Command Format:
+
+$$
+\large
+\overbrace{\texttt{\colorbox{lightgrey}{list}}}
+    ^{\text{\colorbox{lightgrey}{Action}}}
+$$
+
+##### Examples:
+
+* `list`
+
+##### Outcome:
+
+The following is the result of executing the following command:
+
+```
+list
+```
+
+<center>
+<img width="700px" src="images/listcommandoutcome.png">
+</center>
+
+Everybody added to CCA Manager is listed in the **Results Box**.
 
 
-### Adding a person: `add`
+#### Locating persons by name: `find`
+
+Finds persons whose names contain any of the given keywords.
+
+Format: `find KEYWORD [MORE_KEYWORDS]`
+
+* The search is case-insensitive. e.g `hans` will match `Hans`
+* The order of the keywords does not matter. e.g. `Hans Bo` will match `Bo Hans`
+* Only the name is searched.
+* Only full words will be matched e.g. `Han` will not match `Hans`
+* Persons matching at least one keyword will be returned (i.e. `OR` search).
+  e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`
+
+Examples:
+* `find John` returns `john` and `John Doe`
+* `find alex david` returns `Alex Yeoh`, `David Li`<br>
+  ![result for 'find alex david'](images/findAlexDavidResult.png)
+
+#### Filter by CCA and roles: `filter`
+Filter the current list with CCA and roles
+
+Format: filter c/CCA r/ROLES
+
+### Editing Contacts
+
+#### Adding a person: `add`
 
 Adds a person to the CCA Manager.
 
-#### Command Format:
+##### Command Format:
 
 $$
 \large
@@ -215,7 +294,7 @@ $$
         }
     }{ 
         \overbrace{\texttt{\colorbox{lavender}{r/}\color{green}{Treasurer}}}
-            ^{\text{\colorbox{lavender}{Role (s)}}} 
+            ^{\text{\colorbox{lavender}{Role(s)}}} 
     }
     \quad
     \underset{
@@ -225,7 +304,7 @@ $$
         }
     }{ 
         \overbrace{\texttt{\colorbox{plum}{c/}\color{green}{NUS Cycling}}}
-            ^{\text{\colorbox{plum}{CCAs (s)}}} 
+            ^{\text{\colorbox{plum}{CCA(s)}}} 
     }
     \quad
     \underset{
@@ -248,14 +327,14 @@ $$
 *  A person need not have any Description attached.
 </box>
 
-#### Examples:
+##### Examples:
 
 * `add n/John Doe p/98765432 e/johnd@example.com a/6 Sin Ming #01-01`
 * `add n/John Doe p/98765432 e/johnd@example.com a/6 Sin Ming #01-01 c/NUS Cycling c/NUS Origami`
 * `add n/John Doe p/98765432 e/johnd@example.com a/6 Sin Ming #01-01 r/Treasurer r/Logistics`
 * `add n/John Doe p/98765432 e/johnd@example.com a/6 Sin Ming #01-01 d/Manages money`
 
-#### Outcome:
+##### Outcome:
 
 The following is the result of executing the following command:
 ```
@@ -268,41 +347,15 @@ add n/John Doe p/98765432 e/johnd@example.com a/6 Sin Ming #01-01 c/NUS Cycling 
 
 A person is added to CCA Manager with the information provided in the command, and the new person is displayed in the **Results Box**.
 
-### Listing all persons : `list`
+##### Possible Failures:
 
-Shows a list of all persons in the CCA Manager.
+TODO
 
-#### Command Format:
-
-$$
-\large
-\overbrace{\texttt{\colorbox{lightgrey}{list}}}
-    ^{\text{\colorbox{lightgrey}{Action}}}
-$$
-
-#### Examples:
-
-* `list`
-
-#### Outcome:
-
-The following is the result of executing the following command:
-
-```
-list
-```
-
-<center>
-<img width="700px" src="images/listcommandoutcome.png">
-</center>
-
-Everybody added to CCA Manager is listed in the **Results Box**.
-
-### Editing a person : `edit`
+#### Editing a person: `edit`
 
 Edits an existing person in the CCA Manager.
 
-#### Command Format:
+##### Command Format:
 
 $$
 \large
@@ -363,7 +416,7 @@ $$
         }
     }{ 
         \overbrace{\texttt{\colorbox{lavender}{r/}\color{green}{Treasurer}}}
-            ^{\text{\colorbox{lavender}{Role (s)}}} 
+            ^{\text{\colorbox{lavender}{Role(s)}}} 
     }
     \quad
     \underset{
@@ -373,7 +426,7 @@ $$
         }
     }{ 
         \overbrace{\texttt{\colorbox{plum}{c/}\color{green}{NUS Cycling}}}
-            ^{\text{\colorbox{plum}{CCAs (s)}}} 
+            ^{\text{\colorbox{plum}{CCA(s)}}} 
     }
     \quad
     \underset{
@@ -407,7 +460,7 @@ $$
 * When editing Roles, (E.g., `edit 1 r/new role`), the existing Roles of the person **will be removed**. I.e., editing of Roles is **not cumulative**.
 </box>
 
-#### Examples:
+##### Examples:
 
 * `edit 1 p/91234567 e/johndoe@example.com`
     * Edits the phone number and email address of the 1st person to be `91234567` and `johndoe@example.com` respectively.
@@ -416,7 +469,7 @@ $$
 * `edit 1 c/NUS Rollers c/NUS Origami`
     * Edits the CCAs of the 2nd person to be `NUS Rollers` and `NUS Origami`.
 
-#### Outcome:
+##### Outcome:
 
 Suppose we start with this list of people displayed in the **Results Box**.
 
@@ -436,25 +489,37 @@ edit 2 c/NUS Rollers c/NUS Origami
 
 The 2nd person on the list, Bernice Yu, has her CCAs updated from `NUS Cycling` to both `NUS Origami` and `NUS Rollers`.
 
-### Locating persons by name: `find`
+##### Possible Failures:
 
-Finds persons whose names contain any of the given keywords.
+TODO
 
-Format: `find KEYWORD [MORE_KEYWORDS]`
+#### Assigning roles to person: `assign`
 
-* The search is case-insensitive. e.g `hans` will match `Hans`
-* The order of the keywords does not matter. e.g. `Hans Bo` will match `Bo Hans`
-* Only the name is searched.
-* Only full words will be matched e.g. `Han` will not match `Hans`
-* Persons matching at least one keyword will be returned (i.e. `OR` search).
-  e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`
+#### Track a person owing money: `owe`
+Set up owe amount of money in each person.
 
-Examples:
-* `find John` returns `john` and `John Doe`
-* `find alex david` returns `Alex Yeoh`, `David Li`<br>
-  ![result for 'find alex david'](images/findAlexDavidResult.png)
+Format: owe INDEX m/AMOUNT
 
-### Deleting a person : `delete`
+#### Charge a person with money: `charge`
+Charge a person with an amount of money by CCA and role
+
+Format: charge m/AMOUNT c/NUS CCA [r/ROLES]
+`[]` - Denotes optional
+
+#### Track attendance: `setatt`
+
+Set attendance for each person
+
+Format: setatt INDEX att/NUMBER s/NUMBER
+
+#### Delete a CCA: `cca_delete`
+Delete a current existing CCA
+
+Format: cca_delete c/CCA
+
+### Deleting Contacts
+
+#### Deleting a person: `delete`
 
 Deletes the specified person from the CCA Manager.
 
@@ -468,55 +533,19 @@ Examples:
 * `list` followed by `delete 2` deletes the 2nd person in the CCA Manager.
 * `find Betsy` followed by `delete 1` deletes the 1st person in the results of the `find` command.
 
-### Clearing all entries : `clear`
+#### Clearing all entries: `clear`
 
 Clears all entries from the CCA Manager.
 
 Format: `clear`
 
-### Set up owe amount money: `Owe`
-Set up owe amount of money in each person.
+### Storage
 
-Format: owe INDEX m/AMOUNT
-
-### Delete a CCA: `cca_delete`
-Delete a current existing CCA
-
-Format: cca_delete c/CCA
-
-### Remove or show CCA details: `cca display/cca remove`
-Show the details of the current CCA and remove a current CCA
-
-Format: cca display c/CCA 
-        cca remove c/CCA
-
-### Charge a person with an amount of money: `charge`
-Charge a person with an amount of money by CCA and role
-
-Format: charge m/AMOUNT c/NUS CCA [r/ROLES]
-`[]` - Denotes optional
-
-### Filter by CCA and roles: `filter`
-Filter the current list with CCA and roles
-
-Format: filter c/CCA r/ROLES
-
-### Track attendance: `setatt`
-Set attendance for each person
-
-Format: setatt INDEX att/NUMBER s/NUMBER
-
-### Exiting the program : `exit`
-
-Exits the program.
-
-Format: `exit`
-
-### Saving the data
+#### Saving the data
 
 CCA Manager data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
-### Editing the data file
+#### Editing the data file
 
 CCA Manager data are saved automatically as a JSON file `[JAR file location]/data/<TODO>.json`. Advanced users are welcome to update data directly by editing that data file.
 
@@ -527,7 +556,7 @@ If your changes to the data file makes its format invalid, CCA Manager will disc
 Furthermore, certain edits can cause the CCA Manager to behave in unexpected ways (e.g., if a value entered is outside the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </box>
 
-### Archiving data files `[coming in v2.0]`
+#### Archiving data files `[coming in v2.0]`
 
 _Details coming soon ..._
 
@@ -562,20 +591,42 @@ _Details coming soon ..._
 
 ## Command summary
 
+<box type="info" seamless>
+
+**Notes about the command format:**<br>
+
+<!-- TODO: Replace this to fit the actual documentation properly  -->
+* Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
+  e.g. in `add n/NAME`, `NAME` is a parameter that can be used as `add n/John Doe`.
+
+* Items in square brackets are optional.<br>
+  e.g `n/NAME [r/ROLE]` can be used as `n/John Doe r/friend` or as `n/John Doe`.
+
+* Items with `…`​ after them can be used multiple times including zero times.<br>
+  e.g. `[r/ROLE]…​` can be used as ` ` (i.e. 0 times), `r/friend`, `r/friend r/family` etc.
+
+* Parameters can be in any order.<br>
+  e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
+* Extraneous parameters for commands that do not take in parameters (such as `help`, `list`, `exit` and `clear`) will be ignored.<br>
+  e.g. if the command specifies `help 123`, it will be interpreted as `help`.
+
+* If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
+
+</box>
+
 Action     | Format, Examples
 -----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [r/ROLE] [c/CCA]…​ [d/MetaContact]` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 r/friend r/colleague c/CCA Cycling d/I love eating apples`
-**Clear**  | `clear`
-**Delete** | `delete INDEX`<br> e.g., `delete 3` 
-**Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [r/ROLE] [c/CCA]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
-**Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
-**List**   | `list`
-**Filter** | `filter CCA1, CCA2, ...` e.g. `filter NUS Cycling` or `filter c/CCA r/ROLES` e.g. `filter c/CCA Cycling r/colleagues`
-**Assign** | `assign INDEX r/ROLE` e.g. `assign 2 r/ Member` or `assign 2 r/Member`
-**Owe**    | `owe INDEX m/AMOUNT` e.g. `owe 2 m/10.0`
-**cca_delete** | `cca_delete c/CCA` e.g. `cca_delete c/NUS Cycling`
-**charge** | `charge m/AMOUNT c/NUS CCA r/ROLES` e.g. `charge m/5.0 c/NUS Cycling r/member`
-**setatt** | `setatt INDEX att/NUMBER s/NUMBER` e.g. `setatt 2 att/6 s/7`
-**cca display** | `cca display c/CCA` e.g. `cca display c/NUS Greyhats`
-**cca remove** | `cca remove c/CCA` e.g. `cca remove c/NUS Greyhats`
 **Help**   | `help`
+**Exit**   | `exit`
+**List**   | `list`
+**Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
+**Filter** | `filter [c/CCA]... [r/ROLE]...` <br> e.g. `filter c/ NUS Cycling` <br> e.g. `filter c/CCA Cycling r/colleagues`
+**Add**    | `n/NAME p/PHONE e/EMAIL a/ADDRESS [r/ROLE]... [c/CCA]... [d/DESCRIPTION]` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 r/Treasurer r/Member c/CCA Cycling d/Manages money.`
+**Edit**   | `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [r/ROLE]... [c/CCA]... [d/DESCRIPTION]​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
+**Assign** | `assign INDEX [r/ROLE]...` <br> e.g. `assign 2 r/Member`
+**Owe**    | `owe INDEX m/AMOUNT` <br> e.g. `owe 2 m/10.0`
+**Charge** | `charge m/AMOUNT c/CCA r/ROLES` <br> e.g. `charge m/5.0 c/NUS Cycling r/member`
+**Delete CCA** | `cca_delete c/CCA` e.g. `cca_delete c/NUS Cycling`
+**Set Attendance** | `setatt INDEX att/NUMBER s/NUMBER` e.g. `setatt 2 att/6 s/7`
+**Delete** | `delete INDEX`<br> e.g., `delete 3` 
+**Clear**  | `clear`
