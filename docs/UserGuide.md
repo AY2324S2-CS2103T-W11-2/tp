@@ -498,24 +498,17 @@ TODO
 #### Track a person owing money: `owe`
 Set up owe amount of money in each person.
 
-Format: owe INDEX m/AMOUNT
 
 #### Charge a person with money: `charge`
 Charge a person with an amount of money by CCA and role
 
-Format: charge m/AMOUNT c/NUS CCA [r/ROLES]
-`[]` - Denotes optional
 
 #### Track attendance: `setatt`
 
 Set attendance for each person
 
-Format: setatt INDEX att/NUMBER s/NUMBER
-
 #### Delete a CCA: `cca_delete`
 Delete a current existing CCA
-
-Format: cca_delete c/CCA
 
 ### Deleting Contacts
 
