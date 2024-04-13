@@ -158,6 +158,7 @@ mark {
   }
   img {
       zoom: 0.8;  /* might not work on some browsers */
+      padding-bottom: 1em;
   }
 }
 
@@ -172,6 +173,11 @@ h6 {
 p {
     margin-bottom: 1em;
     margin-top: 1em;
+}
+
+.page-nav-print {
+    page-break-before: always;
+    page-break-after: always;
 }
 
 .page-nav-print > nav > a  {
