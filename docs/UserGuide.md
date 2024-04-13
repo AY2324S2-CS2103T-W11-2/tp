@@ -292,9 +292,9 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{can have multiple}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{lavender}{r/}\color{green}{Treasurer}}}
-            ^{\text{\colorbox{lavender}{Role(s)}}} 
+            ^{\text{\colorbox{lavender}{Role(s)}}}
     }
     \quad
     \underset{
@@ -302,9 +302,9 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{can have multiple}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{plum}{c/}\color{green}{NUS Cycling}}}
-            ^{\text{\colorbox{plum}{CCA(s)}}} 
+            ^{\text{\colorbox{plum}{CCA(s)}}}
     }
     \quad
     \underset{
@@ -312,9 +312,9 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{only one allowed}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{aqua}{d/}\color{green}{Manages money}}}
-            ^{\text{\colorbox{aqua}{Description}}} 
+            ^{\text{\colorbox{aqua}{Description}}}
     }
 \end{aligned}
 $$
@@ -322,7 +322,7 @@ $$
 
 <box type="tip" seamless>
 
-**Tip:**  
+**Tip:**
 *  A person can have any number of Role(s) and CCAs(s) (including 0)
 *  A person need not have any Description attached.
 </box>
@@ -374,7 +374,7 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{only one allowed}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{lightpink}{n/}\color{green}{John Doe}}}
         ^{\text{\colorbox{lightpink}{Name}}}
     }
@@ -414,9 +414,9 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{can have multiple}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{lavender}{r/}\color{green}{Treasurer}}}
-            ^{\text{\colorbox{lavender}{Role(s)}}} 
+            ^{\text{\colorbox{lavender}{Role(s)}}}
     }
     \quad
     \underset{
@@ -424,9 +424,9 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{can have multiple}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{plum}{c/}\color{green}{NUS Cycling}}}
-            ^{\text{\colorbox{plum}{CCA(s)}}} 
+            ^{\text{\colorbox{plum}{CCA(s)}}}
     }
     \quad
     \underset{
@@ -434,9 +434,9 @@ $$
             \text{\color{red}{Optional}} \\
             \text{\color{red}{only one allowed}}
         }
-    }{ 
+    }{
         \overbrace{\texttt{\colorbox{aqua}{d/}\color{green}{Manages money}}}
-            ^{\text{\colorbox{aqua}{Description}}} 
+            ^{\text{\colorbox{aqua}{Description}}}
     }
 \end{aligned}
 $$
@@ -621,5 +621,10 @@ Action     | Format, Examples
 **Charge** | `charge m/AMOUNT c/CCA r/ROLES` <br> e.g. `charge m/5.0 c/NUS Cycling r/member`
 **Delete CCA** | `cca_delete c/CCA` e.g. `cca_delete c/NUS Cycling`
 **Set Attendance** | `setatt INDEX att/NUMBER s/NUMBER` e.g. `setatt 2 att/6 s/7`
-**Delete** | `delete INDEX`<br> e.g., `delete 3` 
+**Delete** | `delete INDEX`<br> e.g., `delete 3`
 **Clear**  | `clear`
+
+<script>
+let meow = [...document.getElementsByTagName("a")].filter(a => a.href.includes("#")).filter(a => document.getElementById(a.href.split("#")[1]) === null).map(a => `  -- [${a.textContent}](${a.href.split("#")[1]})`).join("\n");
+if (meow !== "") alert(`Broken links:\n${meow}`)
+</script>

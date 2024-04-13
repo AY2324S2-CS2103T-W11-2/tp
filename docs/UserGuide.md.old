@@ -402,7 +402,7 @@ Format: cca_delete c/CCA
 ### Remove or show CCA details: `cca display/cca remove`
 Show the details of the current CCA and remove a current CCA
 
-Format: cca display c/CCA 
+Format: cca display c/CCA
         cca remove c/CCA
 
 ### Charge a person with an amount of money: `charge`
@@ -481,7 +481,7 @@ Action     | Format, Examples
 -----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [r/ROLE] [c/CCA]…​ [d/MetaContact]` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 r/friend r/colleague c/CCA Cycling d/I love eating apples`
 **Clear**  | `clear`
-**Delete** | `delete INDEX`<br> e.g., `delete 3` 
+**Delete** | `delete INDEX`<br> e.g., `delete 3`
 **Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [r/ROLE] [c/CCA]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
 **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
 **List**   | `list`
