@@ -67,7 +67,8 @@ public class DeleteCcaCommand extends Command {
 
         model.updateFilteredPersonList(this.ccas);
         StringBuilder result = new StringBuilder();
-        result.append(String.format("Deleting CCA(s) %s tags from all its members:\n", this.ccas));
+        result.append(String.format("Deleting CCA(s) %s tags from all its members:\n",
+            this.ccas.getCcas().stream().map(c -> c.ccaName).collect(Collectors.joining(", "))));
 
         // We have to essentially clone the list
         // because as `model.setPerson` is called,
