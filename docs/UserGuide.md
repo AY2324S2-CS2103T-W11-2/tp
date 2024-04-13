@@ -496,7 +496,7 @@ TODO
 #### Assigning roles to person: `assign`
 
 #### Track a person owing money: `owe`
-Set up owe amount of money in each person.
+Set up amount of money each person owes
 
 
 #### Charge a person with money: `charge`
