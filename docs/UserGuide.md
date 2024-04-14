@@ -812,9 +812,7 @@ cca_delete c/Jogging
 <box type="tip" seamless>
 
 **Tip:**
-*  After implementing this command, it will list people with relative deleted CCA. So it's normal when you saw
-other people disappeared. 
-*  Type list command again to see all people
+*  After running this command, CCA Manager will only list contacts of the deleted CCA. Type the `list` command again to see all contacts.
    </box>
 
 ##### Possible Failures:
