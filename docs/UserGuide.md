@@ -330,8 +330,8 @@ $$
         }
     }{
         \overbrace{
-            \texttt{\fcolorbox{tomato}{transparent}{\color{green}{alex}} 
-            \quad 
+            \texttt{\fcolorbox{tomato}{transparent}{\color{green}{alex}}
+            \quad
             \fcolorbox{tomato}{transparent}{\color{green}{lee}}}}
             ^{\substack{
                 \text{\colorbox{gold}{Word in name}} \\
