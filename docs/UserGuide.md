@@ -989,7 +989,7 @@ Term   | Explanation
 **Graphic User Interface** | What you see on your computer or phone screen when you're using programs or apps. It's the visual way you interact with your device.                                                      
 **FAQ** | Frequently Asked Questions                                                                                                                                                                
 **Project Repository** | A digital storage space or a virtual filing cabinet where all the files and documents related to a project are kept. It's usually hosted online using platforms like GitHub or Bitbucket. 
-**Java** | A popular programming language that's used to build all sorts of software applications, from simple mobile apps to complex web servers. More refer to: https://www.java.com/en           
+**Java** | A popular programming language that's used to build all sorts of software applications, from simple mobile apps to complex web servers. For more refer to: https://www.java.com/en           
 **.jar file** | A package containing Java code, along with any other resources the program needs, such as images or configuration files. It stands for "Java ARchive."
 **Linux** | Linux is an operating system, just like Windows or macOS, but it's built on a different foundation. More refer to: https://www.linux.org
 **macOS** | macOS is the operating system developed by Apple for their Macintosh computers. It's what makes everything run on your Mac, like opening apps, browsing the web, or organizing files. More refer to: https://www.apple.com/macos/sonoma
