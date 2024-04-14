@@ -135,7 +135,7 @@ Now you can proceed to the [Features](#features) section for a detailed listing 
 
 ## Features
 
-This section details the available [_functionalities_](#Glossary) of CCA Manager, organised according to the following categories:
+This section details the available functions of CCA Manager, organised according to the following categories:
 
 1. [General Features](#general-features): General features for a better user experience
 2. [Displaying Contacts](#displaying-contacts): Displaying features in the **Results Box**
