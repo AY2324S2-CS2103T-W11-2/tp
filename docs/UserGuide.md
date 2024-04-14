@@ -1002,6 +1002,7 @@ Term   | Explanation
 **JSON** | It's a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. More refer to: https://www.json.org
 **Github** | A platform for hosting and sharing code repositories. It's like a social network for developers, where they can collaborate on projects, share code, and track changes to their code over time. More refer to: https://github.com/
 **Extraneous parameters** | In this User Guide, it refers to anything behind the command. e.g. cca_delete c/Jogging, c/Jogging is a parameter.
+
 <script>
 let woof = [...document.getElementById("content-wrapper").getElementsByTagName("a")].filter(a => a.href.includes("#")).filter(a => document.getElementById(a.href.split("#")[1]) === null).map(a => `  -- [${a.textContent}](${a.href.split("#")[1]})`).join("\n");
 if (woof !== "") alert(`Broken links:\n${woof}`)
