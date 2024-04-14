@@ -65,7 +65,7 @@ CCA Manager endeavors to equip CCAs with tools that streamline administration, f
 
 To get started with CCA Manager and explore its features further, check out our [Installation Guide](#installation-guide) and our [Quick Start](#quick-start), where we'll go through some concrete use cases for our app.
 
-(Reminder: the **blued Oblique type** means it has relevant explanation in Glossary. ^_^ ) 
+(Reminder: the **blue link** means it has relevant explanations in the Glossary. ^_^ ) 
 
 ## Installation Guide
 
