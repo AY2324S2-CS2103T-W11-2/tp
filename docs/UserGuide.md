@@ -203,7 +203,7 @@ help
 
 A box appears with a button `Copy URL`. Clicking it will allow you to paste the link into your internet browsing application of choice (E.g., Chrome, Safari, Firefox) and view our User Guide.
 
-(Click [_here_](#Glossary) if you don't know what is URL)
+(Click [_here_](#Glossary) if you don't know what is an URL.)
 
 #### Exiting the program: `exit`
 
