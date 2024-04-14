@@ -824,7 +824,7 @@ Examples:
 
 Clears all entries from the CCA Manager.
 
-#### Command Format:
+##### Command Format:
 
 $$
 \large
