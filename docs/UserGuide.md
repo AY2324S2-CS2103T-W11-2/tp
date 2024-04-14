@@ -991,14 +991,14 @@ Term   | Explanation
 **Project Repository** | A digital storage space or a virtual filing cabinet where all the files and documents related to a project are kept. It's usually hosted online using platforms like GitHub or Bitbucket. 
 **Java** | A popular programming language that's used to build all sorts of software applications, from simple mobile apps to complex web servers. For more refer to: https://www.java.com/en           
 **.jar file** | A package containing Java code, along with any other resources the program needs, such as images or configuration files. It stands for "Java ARchive."
-**Linux** | Linux is an operating system, just like Windows or macOS, but it's built on a different foundation. More refer to: https://www.linux.org
-**macOS** | macOS is the operating system developed by Apple for their Macintosh computers. It's what makes everything run on your Mac, like opening apps, browsing the web, or organizing files. More refer to: https://www.apple.com/macos/sonoma
+**Linux** | Linux is an operating system, just like Windows or macOS, but it's built on a different foundation. For more refer to: https://www.linux.org
+**macOS** | macOS is the operating system developed by Apple for their Macintosh computers. It's what makes everything run on your Mac, like opening apps, browsing the web, or organizing files. For more refer to: https://www.apple.com/macos/sonoma
 **command terminal** | A text-based interface that allows you to interact with your computer using text commands instead of clicking on icons or buttons like you would in a graphical user interface (GUI). It's also known as a command line interface (CLI).
-**Windows** |An operating system developed by Microsoft for personal computers. It's one of the most widely used operating systems in the world. More refer to: https://www.microsoft.com/windows?r=1
+**Windows** |An operating system developed by Microsoft for personal computers. It's one of the most widely used operating systems in the world. For more refer to: https://www.microsoft.com/windows?r=1
 **URL** | A web address that specifies the location of a resource on the internet. It's basically the address you type into your web browser to visit a specific webpage or access a file online.
 **Index** | In this User Guide, it refers to the number that people appear in the list
-**JSON** | It's a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. More refer to: https://www.json.org
-**Github** | A platform for hosting and sharing code repositories. It's like a social network for developers, where they can collaborate on projects, share code, and track changes to their code over time. More refer to: https://github.com/
+**JSON** | It's a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. For more refer to: https://www.json.org
+**Github** | A platform for hosting and sharing code repositories. It's like a social network for developers, where they can collaborate on projects, share code, and track changes to their code over time. For more refer to: https://github.com/
 **Extraneous parameters** | In this User Guide, it refers to anything behind the command. e.g. cca_delete c/Jogging, c/Jogging is a parameter.
 
 <script>
