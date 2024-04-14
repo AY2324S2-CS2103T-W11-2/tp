@@ -117,7 +117,7 @@ All of CCA Manager's functionality is accessed via commands. This includes both 
 
 ### Upon Booting Up
 
-When you first boot up the app, the app will contain some example contacts for you to get a feel of using CCA Manager's [_functionalities_](#Glossary).
+When you first boot up the app, the app will contain some example contacts for you to get a feel of using CCA Manager's functions.
 
 To run a command, type the command in the **Command Box** and press Enter to execute it. For example, typing **`help`** and pressing Enter will open the help window.
 
