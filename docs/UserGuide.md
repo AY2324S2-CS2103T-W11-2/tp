@@ -819,7 +819,7 @@ other people disappeared.
 
 ##### Possible Failures:
 
-- delete a not existing CCA
+If you delete a non-existent CCA this command will fail.
 
 ### Deleting Contacts
 
