@@ -11,6 +11,14 @@
 }
 </style>
 
+<!-- Change this block to change how "Navigate Back:" section is generated -->
+{% macro navigateback(navigationlinks) %}
+<h5>Navigate Back:</h5>
+{% for item in navigationlinks %}
+<li><a href="{{item.url}}">{{item.name}}</a></li>
+{% endfor %}
+{% endmacro %}
+
 # CCA Manager User Guide
 
 <!--
@@ -39,9 +47,14 @@ This user guide is split into 4 parts:
 
 
 <!-- * Table of Contents -->
-<page-nav-print><h2>Table of Contents</h2></page-nav-print>
+<page-nav-print><h2 id="table-of-contents">Table of Contents</h2></page-nav-print>
 
---------------------------------------------------------------------------------------------------------------------
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"}
+]%}
+
+
+---
 
 ## Product Introduction
 
@@ -64,6 +77,10 @@ CCA Manager endeavors to equip CCAs with tools that streamline administration, f
 3. **Role Assignment**: Assign roles to CCA members, enhancing organization and clarity within the group.
 
 To get started with CCA Manager and explore its features further, check out our [Installation Guide](#installation-guide) and our [Quick Start](#quick-start), where we'll go through some concrete use cases for our app.
+
+{{ navigateback(navigationlinks) }}
+
+----
 
 ## Installation Guide
 
@@ -95,7 +112,9 @@ To gain an idea of what CCA Manager is about, head down to [Quick Start](#quick-
 
 For more details on the commands, visit our [Features](#features) section.
 
---------------------------------------------------------------------------------------------------------------------
+{{ navigateback(navigationlinks) }}
+
+---
 ## Quick Start
 
 Confused about where to get started? Don’t fret, in this section, we'll outline how to use CCA Manager to its maximum effect with a few scenarios.
@@ -113,6 +132,10 @@ First off, CCA Manager's interface consists of the following main components:
 
 All of CCA Manager's functionality is accessed via commands. This includes both adding and editing contacts, as well as accessing existing contacts.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 ### Upon Booting Up
 
 When you first boot up the app, the app will contain some example contacts for you to get a feel of using CCA Manager's functionalities.
@@ -129,7 +152,9 @@ Here are some other example commands you can try:
 
 Now you can proceed to the [Features](#features) section for a detailed listing of the available commands.
 
---------------------------------------------------------------------------------------------------------------------
+{{ navigateback(navigationlinks) }}
+
+---
 
 ## Features
 
@@ -171,6 +196,16 @@ Archiving data files [coming in v2.0]
 
 ### General Features
 
+The following commands are documented in this section:
+* [Viewing help: `help`](#viewing-help-help)
+* [Exiting the program: `exit`](#exiting-the-program-exit)
+
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"},
+    {name: "Features", url: "#features"},
+    {name: "General Features", url: "#general-features"}
+]%}
+
 #### Viewing help: `help`
 
 Shows a message explaining how to access the help page.
@@ -201,6 +236,10 @@ help
 
 A box appears with a button `Copy URL`. Clicking it will allow you to paste the link into your internet browsing application of choice (E.g., Chrome, Safari, Firefox) and view our User Guide.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Exiting the program: `exit`
 
 Exits the program.
@@ -219,9 +258,24 @@ $$
 
 ##### Outcome:
 
-Nil.
+The program will terminate, and the application window will close.
+
+{{ navigateback(navigationlinks) }}
+
+---
 
 ### Displaying Contacts
+
+The following commands are documented in this section:
+* [Listing all persons: `list`](#listing-all-persons-list)
+* [Locating persons by name: `find`](#locating-persons-by-name-find)
+* [Filter by CCA and roles: `filter`](#filter-by-cca-and-roles-filter)
+
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"},
+    {name: "Features", url: "#features"},
+    {name: "Displaying Contacts", url: "#displaying-contacts"}
+]%}
 
 #### Listing all persons: `list`
 
@@ -253,6 +307,9 @@ list
 
 Everybody added to CCA Manager is listed in the **Results Box**.
 
+{{ navigateback(navigationlinks) }}
+
+---
 
 #### Locating persons by name: `find`
 
@@ -314,6 +371,10 @@ The output for `find Alex Yu` is:
 
 If you do not enter a name to find, the command will fail.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Filter by CCA and roles: `filter`
 Filter the current list with CCA and roles
 
@@ -363,7 +424,27 @@ For `filter c/NUS Cycling r/classmates r/colleagues`:
 
 Not entering a CCA will cause the command to fail.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 ### Editing Contacts
+
+The following commands are documented in this section:
+* [Adding a person: `add`](#adding-a-person-add)
+* [Editing a person: `edit`](#editing-a-person-edit)
+* [Assigning roles to person: `assign`](#assigning-roles-to-person-assign)
+* [Track a person owing money: `owe`](#track-a-person-owing-money-owe)
+* [Charge a person with money: `charge`](#charge-a-person-with-money-charge)
+* [Track attendance: `setatt`](#track-attendance-setatt)
+* [Delete a CCA: `cca_delete`](#delete-a-cca-cca-delete)
+
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"},
+    {name: "Features", url: "#features"},
+    {name: "Editing Contacts", url: "#editing-contacts"}
+]%}
+
 
 #### Adding a person: `add`
 
@@ -452,6 +533,10 @@ A person is added to CCA Manager with the information provided in the command, a
 ##### Possible Failures:
 
 TODO
+
+{{ navigateback(navigationlinks) }}
+
+---
 
 #### Editing a person: `edit`
 
@@ -595,6 +680,10 @@ The 2nd person on the list, Bernice Yu, has her CCAs updated from `NUS Cycling` 
 
 If the entry in the list is not present, the command will fail.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Assigning roles to person: `assign`
 
 ##### Command Format:
@@ -636,6 +725,10 @@ For `assign 1 r/Treasurer`
 
 If the entry does not exist, the ocmmand will fail.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Track a person owing money: `owe`
 
 Set up the amount of money a person owes.
@@ -672,6 +765,10 @@ For `owe 1 m/10.00`:
 
 If the entry does not exist, the command will fail. The command will also reject
 non-numeric amounts of money, or money that exceeds 2 decimal places.
+
+{{ navigateback(navigationlinks) }}
+
+---
 
 #### Charge a person with money: `charge`
 Charge a person with an amount of money by CCA and optionally, by role.
@@ -725,8 +822,13 @@ If the amount entered is non-numeric, the
 command will fail. The command also fails if nobody was charged.
 This usually means the CCA or role was invalid.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Track attendance: `setatt`
 
+TODO
 
 ##### Command Format:
 
@@ -766,6 +868,10 @@ TODO
 
 Set attendance for each person
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Delete a CCA: `cca_delete`
 Delete a current existing CCA
 
@@ -792,7 +898,21 @@ TODO
 
 TODO
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 ### Deleting Contacts
+
+The following commands are documented in this section:
+* [Deleting a person: `delete`](#deleting-a-person-delete)
+* [Clearing all entries: `clear`](#clearing-all-entries-clear)
+
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"},
+    {name: "Features", url: "#features"},
+    {name: "Deleting Contacts", url: "#deleting-contacts"}
+]%}
 
 #### Deleting a person: `delete`
 
@@ -836,6 +956,10 @@ Examples:
 * `find Betsy` followed by `delete 1` deletes the 1st person in the results of the `find` command.
 -->
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Clearing all entries: `clear`
 
 Clears all entries from the CCA Manager.
@@ -860,11 +984,30 @@ TODO
 
 TODO
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 ### Storage
+
+The following features are documented in this section:
+* [Saving the data](#saving-the-data)
+* [Editing the data file](#editing-the-data-file)
+* [Archiving data files `[coming in v2.0]`](#archiving-data-files-coming-in-v2-0)
+
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"},
+    {name: "Features", url: "#features"},
+    {name: "Storage", url: "#storage"}
+]%}
 
 #### Saving the data
 
 CCA Manager data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
+
+{{ navigateback(navigationlinks) }}
+
+---
 
 #### Editing the data file
 
@@ -877,11 +1020,21 @@ If your changes to the data file makes its format invalid, CCA Manager will disc
 Furthermore, certain edits can cause the CCA Manager to behave in unexpected ways (e.g., if a value entered is outside the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 </box>
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 #### Archiving data files `[coming in v2.0]`
 
 _Details coming soon ..._
 
---------------------------------------------------------------------------------------------------------------------
+{{ navigateback(navigationlinks) }}
+
+---
+
+{% set navigationlinks = [
+    {name: "Table of Contents", url: "#table-of-contents"}
+]%}
 
 ## FAQ
 
@@ -900,15 +1053,25 @@ _Details coming soon ..._
 **Q**: How can I provide feedback or suggest improvements for CCA Manager? <br>
 **A**: Feel free to [open an issue](https://github.com/AY2324S2-CS2103T-W11-2/tp/issues), your feedback is very valuable to us. You would have to create a new [Github](https://github.com/) account to do so. This will allow us to maintain constant communication with you until the issue is addressed.
 
+{{ navigateback(navigationlinks) }}
+
+---
+
 ## Common Issues
 
---------------------------------------------------------------------------------------------------------------------
+TODO
+
+{{ navigateback(navigationlinks) }}
+
+---
 
 ## Known issues
 
 1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the Graphic User Interface will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
 
---------------------------------------------------------------------------------------------------------------------
+{{ navigateback(navigationlinks) }}
+
+---
 
 ## Command summary
 
@@ -936,7 +1099,7 @@ _Details coming soon ..._
 </box>
 
 Action     | Format, Examples
------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---|---
 **Help**   | `help`
 **Exit**   | `exit`
 **List**   | `list`
@@ -956,3 +1119,7 @@ Action     | Format, Examples
 let woof = [...document.getElementById("content-wrapper").getElementsByTagName("a")].filter(a => a.href.includes("#")).filter(a => document.getElementById(a.href.split("#")[1]) === null).map(a => `  -- [${a.textContent}](${a.href.split("#")[1]})`).join("\n");
 if (woof !== "") alert(`Broken links:\n${woof}`)
 </script>
+
+{{ navigateback(navigationlinks) }}
+
+---
