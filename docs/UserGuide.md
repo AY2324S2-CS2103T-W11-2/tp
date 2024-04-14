@@ -768,8 +768,8 @@ setatt 4 att/3 s/6
 
 ##### Outcome:
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+<img src="images/UG-Basics/outcomeSetatt1.png" width=700>
+<img src="images/UG-Basics/outcomeSetatt2.png" width=700>
 
 ##### Possible Failures:
 
@@ -804,12 +804,11 @@ cca_delete c/Jogging
 
 ##### Outcome:
 ###### Before delete
-![img_2.png](img_2.png)
+<img src="images/UG-Basics/outcomeCca_deleteBefore.png" width=700>
 
 ###### After delete
-![img_3.png](img_3.png)
-![img_4.png](img_4.png)
-
+<img src="images/UG-Basics/outcomeCca_deleteAfter1.png" width=700>
+<img src="images/UG-Basics/outcomeCca_deleteAfter2.png" width=700>
 <box type="tip" seamless>
 
 **Tip:**
