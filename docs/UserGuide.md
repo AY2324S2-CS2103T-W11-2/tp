@@ -75,7 +75,7 @@ To get started with CCA Manager and explore its features further, check out our 
 
 1. Ensure you have [_Java_](#Glossary) `11` or above installed on your Computer.
 
-1. Download the latest `ccamanager.jar` from [here](https://github.com/se-edu/addressbook-level3/releases). (Click [_here_](#Glossary) if you don't know what is .jar)
+1. Download the latest `ccamanager.jar` from [here](https://github.com/se-edu/addressbook-level3/releases). (Click [_here_](#Glossary) if you don't know what is `.jar`)
 
 1. Copy the file to the folder you want to use as the _home folder_ for your CCA Manager.
 
