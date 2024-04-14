@@ -995,7 +995,6 @@ Term   | Explanation
 **macOS** | macOS is the operating system developed by Apple for their Macintosh computers. It's what makes everything run on your Mac, like opening apps, browsing the web, or organizing files. More refer to: https://www.apple.com/macos/sonoma
 **command terminal** | A text-based interface that allows you to interact with your computer using text commands instead of clicking on icons or buttons like you would in a graphical user interface (GUI). It's also known as a command line interface (CLI).
 **Windows** |An operating system developed by Microsoft for personal computers. It's one of the most widely used operating systems in the world. More refer to: https://www.microsoft.com/windows?r=1
-**functionalities** | In this User Guide, it refers to what CCA Manager is able to do or tasks it can perform.
 **URL** | A web address that specifies the location of a resource on the internet. It's basically the address you type into your web browser to visit a specific webpage or access a file online.
 **Index** | In this User Guide, it refers to the number that people appear in the list
 **JSON** | It's a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. More refer to: https://www.json.org
