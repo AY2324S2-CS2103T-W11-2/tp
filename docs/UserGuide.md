@@ -811,8 +811,8 @@ For `owe 1 m/10.00`:
 ##### Possible Failures:
 
 
-- The [_Index of person_](#glossary) must be within range. I.e., it must be greater than 0, and smaller than the length of the currently displayed list of people. This is because the [_Index of person_](#glossary) will be used to indicate which person to operate the command on.
-+ The amount of money provided `m/` must also be numeric and in dollars, and cannot exceed 2 decimal places. I.e., the following are invalid for the amount:
+- The [_Index of person_](#glossary) must be within range.
++ The amount of money provided `m/` must also be numeric and in dollars, and cannot exceed 2 decimal places. For example, the following are invalid for the amount:
     + `m/one dollar`: Not numeric.
     + `m/10.001`: More than 2 decimal places.
 
