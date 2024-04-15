@@ -14,7 +14,7 @@ with(this){return _c('h2',{attrs:{"id":"acknowledgements"}},[_c('strong',[_v("Ac
 with(this){return _c('p',[_c('em',[_v("{ list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well }")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("CS2103T AB3 Source Code")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"https://uibakery.io/regex-library/phone-number-java"}},[_v("https://uibakery.io/regex-library/phone-number-java")]),_v(" - Regarding Phone Validation Java Regex")])])}
+with(this){return _c('ol',[_c('li',[_v("CS2103T AB3 Source Code")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"https://uibakery.io/regex-library/phone-number-java"}},[_v("https://uibakery.io/regex-library/phone-number-java")]),_v(" - Regarding Phone Validation Java Regex")]),_v(" "),_c('li',[_v("Java documentation for BigDecimal "),_c('a',{attrs:{"href":"https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html"}},[_v("https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html")]),_v(".")])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"setting-up-getting-started"}},[_c('strong',[_v("Setting up, getting started")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#setting-up-getting-started","onclick":"event.stopPropagation()"}})])}
@@ -209,7 +209,7 @@ with(this){return _c('h3',{attrs:{"id":"payment-splitting"}},[_v("Payment splitt
 with(this){return _c('p',[_v("After payments are implemented, we expect to be able to split payments among\nCCA members. An example command is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("split a/4.00 c/NUS Cycling")]),_v(". Which means\n\"split $4.00 among CCA members NUS Cycling\".  The process is as follows.")])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("Identify all members belonging to that CCA.")]),_v(" "),_c('li',[_v("Count the number of members in 1., and split the amount equally.\n"),_c('ul',[_c('li',[_v("Note: rounding errors may occur here. So we should use "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("double")]),_v(" in Java\nfor higher precision and also round to nearest 2 d.p.")])])]),_v(" "),_c('li',[_v("Add the split amount to each member's \"payment owed\" field")])])}
+with(this){return _c('ol',[_c('li',[_v("Identify all members belonging to that CCA.")]),_v(" "),_c('li',[_v("Count the number of members in 1., and split the amount equally.\n"),_c('ul',[_c('li',[_v("Note: rounding errors may occur here. So we should use "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("BigDecimal")]),_v(" in Java\nfor higher precision.")])])]),_v(" "),_c('li',[_v("Add the split amount to each member's \"payment owed\" field")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"proposed-better-cca-level-actions"}},[_v("[Proposed] Better CCA-level Actions"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#proposed-better-cca-level-actions","onclick":"event.stopPropagation()"}})])}
@@ -395,6 +395,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 21:56:57 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 22:22:22 GMT+8]")])])])}
 }];
   
