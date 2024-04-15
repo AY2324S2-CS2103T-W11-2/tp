@@ -395,7 +395,7 @@ The output for `find Alex Yu` is:
 
 ##### Possible Failures:
 
-+ If you do not provide a word, i.e., your command is `find`, the command will fail.
++ If you do not provide a word (for instance, if you ran the command `find`), the command will fail.
 
 <box type="tip"><md>
 **Tip**:
@@ -462,7 +462,7 @@ For `filter c/NUS Cycling r/classmates r/colleagues`:
 
 ##### Possible Failures:
 
-+ If you do not provide a CCA to the command, i.e., your command is `filter`, then the command will fail.
++ If you do not provide a CCA to the command (for instance, if you ran the command `filter`), then the command will fail.
 
 <box type="tip"><md>
 **Tip**: If you intend to display all contacts by not providing a CCA, refer to the [`list` command](#listing-all-persons-list).
@@ -692,7 +692,7 @@ $$
 <box type="warning"><md>
 **Warning:**
 
-* When editing Roles, (E.g., `edit 1 r/new role`), the existing Roles of the person **will be removed**. I.e., editing of Roles is **not cumulative**.
+* When editing Roles, (E.g., `edit 1 r/new role`), the existing Roles of the person **will be removed**. For example, editing of Roles is **not cumulative**.
 </md></box>
 
 ##### Examples:
@@ -726,7 +726,7 @@ The 2nd person on the list, Bernice Yu, has her CCAs updated from `NUS Cycling` 
 
 ##### Possible Failures:
 
-+ The [_Index of person_](#glossary) must be within range. I.e., it must be greater than 0, and smaller than the length of the currently displayed list of people. This is because the [_Index of person_](#glossary) will be used to indicate which person to operate the command on.
++ The [_Index of person_](#glossary) must be within range. For example, it must be greater than 0, and smaller than the length of the currently displayed list of people. This is because the [_Index of person_](#glossary) will be used to indicate which person to operate the command on.
 
 {{ navigateback(navigationlinks) }}
 
@@ -771,7 +771,7 @@ For `assign 1 r/Treasurer`
 
 ##### Possible Failures:
 
-- The [_Index of person_](#glossary) must be within range. I.e., it must be greater than 0, and smaller than the length of the currently displayed list of people. This is because the [_Index of person_](#glossary) will be used to indicate which person to operate the command on.
+- The [_Index of person_](#glossary) must be within range. For example, it must be greater than 0, and smaller than the length of the currently displayed list of people. This is because the [_Index of person_](#glossary) will be used to indicate which person to operate the command on.
 
 {{ navigateback(navigationlinks) }}
 
@@ -883,7 +883,7 @@ For `charge m/10.00 c/NUS Cycling r/Treasurer`:
 
 ##### Possible Failures:
 
-+ The amount of money provided `m/` must also be numeric and in dollars, and cannot exceed 2 decimal places. I.e., the following are invalid for the amount:
++ The amount of money provided `m/` must also be numeric and in dollars, and cannot exceed 2 decimal places. For example, the following are invalid for the amount:
     + `m/one dollar`: Not numeric.
     + `m/10.001`: More than 2 decimal places.
 + If nobody is charged, the command will fail. This might be caused by nobody in the contact list fulfilling both the CCAs and the Roles provided to the command.
@@ -924,7 +924,7 @@ $$
 ##### Examples:
 
 * `setatt 2 att/4 s/6`
-    * Sets the attendance of the second person in the **Result Box** to be `4/6`. I.e., that they have attended 4 out of a total of 6 sessions.
+    * Sets the attendance of the second person in the **Result Box** to be `4/6`. For example, that they have attended 4 out of a total of 6 sessions.
 
 ##### Outcome:
 
@@ -1108,7 +1108,7 @@ The following features are documented in this section:
 
 #### Editing the data file
 
-CCA Manager data are saved automatically as a [_JSON_](#glossary) file `[JAR file location]/data/addressbook.json`. Advanced users are welcome to update data directly by editing that data file.
+CCA Manager data are saved automatically as a [_JSON_](#glossary) file `[JAR file location]/data/ccamanager.json`. Advanced users are welcome to update data directly by editing that data file.
 
 <box type="warning"><md>
 **Warning:**
