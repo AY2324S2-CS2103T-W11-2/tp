@@ -576,7 +576,8 @@ A person is added to CCA Manager with the information provided in the command, a
 
 ##### Possible Failures:
 
-TODO
+- Incorrect format of parameters.
+- Not having the minimum parameters (A contact must have name, phone, email, address).
 
 {{ navigateback(navigationlinks) }}
 
@@ -893,7 +894,8 @@ For `charge m/10.00 c/NUS Cycling r/Treasurer`:
 
 #### Track attendance: `setatt`
 
-Set attendance for each person
+Tracks the attendance of each contact by recording the number of attended sessions out of 
+the total number of sessions.
 
 ##### Command Format:
 
@@ -1025,15 +1027,19 @@ $$
 
 ##### Examples:
 
-TODO
+`delete 3`
 
 ##### Outcome:
 
-TODO
+###### Before
+<img src="images/UG-Basics/outcomeDeleteBefore.png" width=700>
+
+###### After
+<img src="images/UG-Basics/outcomeDeleteAfter.png" width=700>
 
 ##### Possible Failures:
 
-TODO
+- Index out of range
 
 <!--
 Format: `delete INDEX`
@@ -1070,15 +1076,15 @@ $$
 
 ##### Examples:
 
-TODO
+`clear`
 
 ##### Outcome:
 
-TODO
+###### Before
+<img src="images/UG-Basics/outcomeClearBefore.png" width=700>
 
-##### Possible Failures:
-
-TODO
+###### After
+<img src="images/UG-Basics/outcomeClearAfter.png" width=700>
 
 {{ navigateback(navigationlinks) }}
 
