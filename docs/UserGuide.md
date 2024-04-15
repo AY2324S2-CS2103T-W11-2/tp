@@ -932,7 +932,7 @@ $$
 ##### Possible Failures:
 
 - If the number of sessions attended (`att/`) exceeds the number of sessions total `s/`, the application will error out.
-- The [_Index of person_](#glossary) must be within range. I.e., it must be greater than 0, and smaller than the length of the currently displayed list of people. This is because the [_Index of person_](#glossary) will be used to indicate which person to operate the command on.
+- The [_Index of person_](#glossary) must be within range.
 
 
 {{ navigateback(navigationlinks) }}
