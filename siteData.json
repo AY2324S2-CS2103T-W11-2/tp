@@ -40,7 +40,7 @@
       "src": "DeveloperGuide.md",
       "title": "Developer Guide",
       "headings": {
-        "ab-3-developer-guide": "AB-3 Developer Guide",
+        "cca-manager-developer-guide": "CCA Manager Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -56,7 +56,7 @@
         "track-a-person-owing-money": "Track a person owing money",
         "payment-splitting": "Payment splitting",
         "proposed-better-cca-level-actions": "[Proposed] Better CCA-level Actions",
-        "proposed-attendance-tracking": "[Proposed] Attendance Tracking",
+        "attendance-tracking": "Attendance Tracking",
         "proposed-feedback-to-app-developers-and-cca-excos": "[Proposed] Feedback to App Developers and CCA Excos",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
