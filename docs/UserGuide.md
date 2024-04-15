@@ -734,6 +734,8 @@ The 2nd person on the list, Bernice Yu, has her CCAs updated from `NUS Cycling` 
 
 #### Assigning roles to person: `assign`
 
+TODO
+
 ##### Command Format:
 
 $$
